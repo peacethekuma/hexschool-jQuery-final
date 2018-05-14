@@ -1,0 +1,391 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* --- CSS reset is above ---*/
+
+*{
+	box-sizing: border-box;
+}
+
+.body{
+	font-family: Microsoft JhengHei;
+}
+
+.wrap{
+	width: 1000px;
+	margin: 0 auto;
+}
+.claerfix{
+	clear: both;
+}
+
+
+/*---header---*/
+
+.linkbar{
+	background: #f6f6f6;
+	height: 30px;
+}
+
+.linkbar a{
+	text-decoration: none;
+
+}
+
+.fb{
+	color: #4460a0;
+}
+
+.fb:hover{
+	color: #f5cc00;
+}
+
+.tw{
+	color: #00aaec;
+}
+
+.tw:hover{
+	color: #f5cc00;
+}
+
+.linkbar ul{
+	float: right;
+	margin-top: -5px;
+}
+
+.linkbar li{
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding:10px 10px;
+
+}
+
+
+
+.linkbar li img{
+	padding-right: 5px;
+}
+
+.topmenu{
+	width: 1000px;
+	height: 60px;
+	position: absolute;
+	z-index: 100;
+	background-color: #fff;
+}
+
+.topmenu h1{
+	float:left;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+
+}
+
+.topmenu h1 a{
+	float:left;
+	display: block;
+	background-image:url("../images/logo-green.png");
+	width: 177px;
+	height: 36px;
+	margin-top: 10px;
+}
+
+.menu{
+	float: right;
+}
+
+.menu > li{
+	float: left;
+	width: 150px;
+	margin-left: 20px;
+}
+
+.menu li a{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	color: #00cc99;
+	background-color: #fff;
+	padding: 20px;
+	
+}
+
+.menu li a:hover{
+	border-bottom: 2px solid #00cc99;
+}
+
+.menu ul {
+  display: none;
+}
+
+.dropdown-list-open a:hover{
+	color: #fff;
+	background-color: #00cc99;
+}
+
+.banner{
+	position: relative;
+	margin-top: 65px;
+	overflow: hidden;
+}
+
+.banner h2{
+	position: absolute;
+	top: 100px; 
+	font-size: 36px;
+	display: block;
+	width: 100%;
+	color: white;
+	background: rgba(000,0,0,0.3);
+	padding:25px;
+	line-height: 48px;
+	text-align: left;
+	z-index: 10;
+	-webkit-animation-duration: 2s;
+}
+
+.banner img{
+	max-width: 100%;
+    max-height: 100%;
+}
+
+
+/*---feature---*/
+
+.feature{
+	margin-top: 50px;
+}
+
+h3{
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	
+}
+
+.feature .cards{
+	float: left;
+	width: 290px;
+	height: 400px;
+	margin: 40px 20px;
+	box-shadow: 0 5px 5px #dbdbdb;
+	border-radius: 5px;
+	
+}
+
+
+.j-list {
+	padding-left: 40px;
+}
+
+.j-list li{
+	list-style-type: disc; 
+	margin-bottom: 10px; 
+}
+
+
+.feature .cards p{
+	margin-top:-10px;
+	padding:20px;
+	line-height: 25px;
+}
+
+.feature .cards img.html5{
+	margin:15px 70px;
+}
+
+.feature .cards img.rwd{
+	margin: 20px 30px;
+}
+
+.feature .cards img.jquery{
+	margin: 20px 70px;
+}
+/*-comparison---*/
+
+
+
+.comparison h2{
+	font-size: 24px;
+	text-align: center;
+}
+
+table{
+	width: 900px;
+	text-align: left;	
+	margin:30px auto;
+	font-size: 15px;
+	-webkit-animation-duration: 2s;
+}
+
+tr{
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+}
+
+tr.th-top{
+	background-color: #f7f7f7;
+}
+
+th,td{
+	padding: 10px 30px;
+}
+
+.hl{
+	color: #22b28e;
+}
+
+.hex-hl{
+	-webkit-animation-iteration-count: 5;
+}
+
+/*---contact---*/
+
+.contact{
+	background-image: url(../images/bg-stripe.png);
+	background-repeat: repeat-x;
+	height: 405px;
+	position: relative;
+	margin-top: 60px
+}
+
+p.form-title{
+	font-size: 24px ;
+	color:white;
+	text-align: center;
+	line-height: 1.5;
+	padding-top: 30px;
+	padding-bottom: 20px;
+  	-webkit-animation-iteration-count: 8;
+}
+
+textarea.f-left{
+	width: 465px;
+	float: left;
+	margin:20px;
+	padding-bottom: 60px;
+	border-style: none;
+	border-radius: 3px;
+
+}
+
+.f-right {
+	float: left;
+	width: 465px;
+	padding: 20px;
+}
+
+p.info-type{
+	font-size: 15px;
+	color: #fff;
+	margin-bottom: 5px;
+
+}
+
+.f-right input{
+
+	padding:5px 315px 5px 10px;
+	margin-bottom: 20px;
+	border-radius: 3px;
+
+}
+
+input.btn{
+	color:white;
+	background-color: #00cc99;
+	border-style: none;
+	border-radius: 3px;
+	position: absolute;
+	right: 20px;
+	bottom: 25px;
+	padding: 10px 25px
+}
+
+input.btn:hover{
+	background-color: #f5cc00; 
+	cursor: pointer;
+}
+
+/*---footer---*/
+
+a.footericon{
+	display: block;
+	background-image: url(../images/icon-grey.png);
+	height: 36px; 
+	width: 171px;
+	margin-top: 10px;
+	float: left;
+}
+
+.footer ul{
+	float:right;
+	margin:10px;
+}
+
+.footer ul li{
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+
+.footer ul li a{
+	text-decoration: none;
+	color:#e965a3;
+}
+
+.top-btn{
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+}
+
+.top-btn img{
+	width: 60px;
+}
